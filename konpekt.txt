@@ -1,0 +1,198 @@
+DOM  (document object model) bu dastruchini interfeysi bolib u yordamida hujjatga elementlar yaratish ozgartirish вqoshish ochirish imkonini beradi va (event) qoshish degani  
+
+DOM bu darahtga ohshaydi(tree of nodes) sifatida koriladi
+
+DOM tuzulmasi 
+document bu web sahifani ifodalovchi asosiy object
+
+element html teglari ifodolovchi qismlari (misol <div> <p> va boshqalar)
+
+
+attribute html teglarini atributlar (misol class id src va boshqalar)
+
+text - teglarni matni ni ifodolovchi qism
+
+
+selectorlar bu html sahifasidagi elementlarni tanlash uchun ishlatiladi
+
+Jonli (Live) – HTMLCollection o‘zgaruvchan bo‘lib, DOM o‘zgartirilsa, u ham avtomatik yangilanadi.
+Indeks bo‘yicha kirish mumkin – HTMLCollection massivga o‘xshaydi (collection[0] orqali element olish mumkin).
+Element nomi yoki id bilan ham olish mumkin – collection["elementID"].
+
+
+ID chaqirish bo‘yicha – getElementById()
+
+Teg nomi bo‘yicha – getElementsByTagName()
+
+Klass nomi bo‘yicha – getElementsByClassName()
+
+Input name atributi bo‘yicha – getElementsByName()
+
+
+querySelector() – bu JavaScript-da CSS selectorlar yordamida HTML-dagi birinchi
+mos kelgan elementni tanlash uchun ishlatiladigan metod.
+
+
+bu class id teg name orqali chaqirilsa boladi
+
+
+querySelectorAll() – bu JavaScript-da CSS selectorlar yordamida HTML-dagi
+barcha mos kelgan elementlarni tanlash uchun ishlatiladigan metod.
+
+
+bu class id teg name orqali chaqirilsa boladi
+
+
+HTMLCollection – bu faqat HTML elementlardan iborat bo‘lgan jonli (live) to‘plam.
+
+NodeList – bu HTML elementlar + matn va boshqa tugunlar bo‘lishi mumkin bo‘lgan statik (o‘zgarmas) to‘plam.
+
+
+array.from bu hamma qiymatlarni arrayga aylantrib beradi
+
+
+textContent – bu JavaScript-da HTML elementining faqat matnini olish yoki o‘zgartirish uchun ishlatiladigan xususiyat (property).
+
+
+innerHTML – bu JavaScript-da HTML elementining ichidagi matn va HTML kodini olish yoki o‘zgartirish uchun ishlatiladigan xususiyat (property).
+
+
+style – bu JavaScript-da HTML elementining inline CSS uslublarini (style) o‘zgartirish yoki olish uchun ishlatiladigan obyekt.
+
+getAttribute(attributeName) – bu JavaScript-da HTML elementining istalgan atributining qiymatini olish uchun ishlatiladigan metod.
+
+
+setAttribute(attributeName, value) – bu JavaScript-da HTML elementining istalgan atributining qiymatini o‘rnatish yoki o‘zgartirish** uchun ishlatiladigan metod.
+
+parentElement bu biron bir oldida turgan elementni otasini olib beradi
+
+
+children – bu JavaScript-da biror elementning faqat element tugunlari (Element nodes) bo'lgan to‘g‘ridan-to‘g‘ri farzandlarini olish uchun ishlatiladigan xususiyat.
+
+previousElementSibling Bir elementning avvalgi (previous) aka-uka elementini qaytaradi. Faqat HTML elementlarini hisobga oladi (text node emas).
+
+previousSibling Oldingi har qanday tugunni (text, comment, yoki element) qaytaradi. previousElementSibling dan farqli ravishda text node larni ham olishi mumkin.
+
+
+nextElementSibling Keyingi aka-uka (sibling) elementni qaytaradi. Faqat HTML elementlarini hisobga oladi.
+
+nextSibling Keyingi har qanday tugunni (element, text, comment) qaytaradi. nextElementSibling dan farqi – text node larni ham olishi mumkin.
+
+
+classList
+Elementning klasslar ro‘yxati bilan ishlash imkonini beradi.
+Asosiy metodlar:
+
+add bu elemtni qoshish uchun ishlatiladi
+remove bu elemtni ochirish uchun ishlatiladi
+toggle Klass mavjud bo‘lsa, olib tashlaydi; bo‘lmasa, qo‘shadi.
+contains  Klass borligini tekshiradi (true yoki false qaytaradi).
+
+
+classList   html elementni clas royhatini qaytaradi va qiymatni array qilib qaytaradi
+
+
+Create Element document.createElement(tagName) → Yangi HTML element yaratadi.
+
+
+Append append() → Bir yoki bir nechta element yoki matn qo‘shadi. appendChild() → Faqat bitta element qo‘shish uchun ishlatiladi.
+
+
+Prepend Elementning boshiga yangi element qo‘shish uchun ishlatiladi.
+
+
+Remove Element Elementni o‘chirish uchun ishlatiladi. element.remove() → Elementni DOM dan olib tashlaydi.
+
+
+Event (Hodisa) Hodisalar foydalanuvchi harakati (click, input, hover) yoki avtomatik reaktsiyalarni ifodalaydi.
+
+
+Inline Event Handler HTML elementida bevosita hodisa yozish.
+
+Inline Event Properties JavaScript-da element.event = function usulida hodisa qo‘shish.
+
+
+Event Listeners addEventListener(type, function) → Hodisa qo‘shish. removeEventListener(type, function) → Hodisani olib tashlash.
+
+Event Target Hodisani ishga tushirgan haqiqiy elementni olish.
+
+
+Event Bubbling (Ko‘tarilish) Hodisa avval ichki elementda, so‘ng tashqi elementlarda ishlaydi.
+
+
+Event Capturing (Tushish) Hodisalar avval tashqi, so‘ng ichki elementlarda ishlaydi.
+
+
+
+local storage bu browserda malumotlarni saqlash uchun yaratiladigan xotira hisoblanadi
+
+browser 5 gb gacha malumotlarni saqlaydi
+
+
+localstorage.setItem (key, value) berilgan kalit va qiymatni orqali malumotni saqlash
+
+
+localstorage.getItem(key) berilgan kalit orqali saqlangan malumotni olish
+
+localstorage.removeItem(key) berilgan kalit orqali saqlangan malumotlarni ochirish
+
+localstorage.clear() barcha saqlangan malumotlarni tozalash
+
+JSON bu format bu bekendan malumotlarni olib kelish  asosiy farqlaridan bir string da boladi
+
+JSON parse qayta objectga aylantiradi
+
+JSONstringify stringga aylantirsa
+
+Session storage bu localstorage ga ohshaydi farqi bu sahifa yopilganda ishlamaydi
+
+Cookie bu web sahifalar va browserlar ortasida malumot almashtirish uchun ishlatiladi Cookie hajmi 4gb  
+
+HTTP request bu bekendan malomot olib keladi bu javascriptda API bolib  u vebsahifadan serverga asinxron tarzda HTTP yoki HTTPS sorovlarini yuborish uchun ishlatiladi
+
+asosiy 4 ta metod bor 
+
+get data olib kelish uchun ishlatiladi
+post yangi data qoshish uchun 
+put datani edit qilsih uchun 
+delete datani ochirish uchun
+
+promise bu javascriptda asinxron operatsiyasini boshqararish uchun ishlatiladigan object hisoblanadi
+
+promise 3 ta holatga ega boladi
+
+pendingvazifa hali bajarilmagan va hech qanday natija yoq
+
+fulfilled vazifa muvaffaqiyatli bajarildi va natija qaytarildi 
+
+rejacted vazifa bajarilmadi va xatolik yuz berdi
+
+resolve malumotimiz togri bosa true ni oladi 
+
+
+rejected malumotimiz hato bolsa false ni oladi
+
+finally bu bolsa rejected ham resolve ishlaydi 
+
+call apply bind bularni ishlashi bir xil vazifasi xarhil
+
+call metodi funksiyaning darhol chaqiradi va unga parametr sifatida  kontekst  this va argumentlarni uzatatadi
+
+
+apply metodi ham huddi  call kabi lekin argumentlar massiv  shaklida qabul qiladi
+
+bind funksiya chaqirmaydi  balki yangi funksiya yaratadi va this qaymatini biriktiradi yaratilgan funksiya keyin chaqirilishi mumkin
+
+module.exports node.js har bir  fayl aftomatik ravishda oz muduli sifatida qaraladi fayzl ichidagi malumotlarni boshqa fayllarga ulashish uchun 
+module.exports ishlatiladi
+
+module.exports bu malumotlarni yuborar ekan require malumotlarni qabul qilib oladi
+
+
+import export javascriptda  ES6 moddullar tizimining asosiy qismi bolib kodni tashkil qilish va bir fayldan boshqasiga otkazishni ancha ossonlashtiriadi
+
+
+OOP => object orintend programming 
+
+
+class
