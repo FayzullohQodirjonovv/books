@@ -194,5 +194,10 @@ import export javascriptda  ES6 moddullar tizimining asosiy qismi bolib kodni ta
 
 OOP => object orintend programming 
 
+OOP 4 ta
+inheritence meros olish 
+polymorphism kop shakillik
+abstraction
+encapsulation kapsulyatsiya asosiy maqsadi malumotlarni himoya qilsh
 
-class
+class javascriptda bu objectlar yaratish uchun ishlatiladigan shablondir u dasturlashda objectlarning xususiyatlari va metodlarini aniqlaydi 
